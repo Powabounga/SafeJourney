@@ -5,6 +5,47 @@
 {% block body %}
 
 <section>
-    <p>Bienvenu</p>
+    <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Chez SafeJourney, nous vous aidons à préparer vos trajets grâce à des conseils, astuces et expériences mis à votre disposition</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Conseils</h3>
+            <p>Grâce aux expériences des utilisateurs et de nos équipes, nous pouvons vous apporter différent conseils de sécurité, de logement, d'alimentation et bien plus encore.</p>
+            <a href="{{ path('app_conseil') }}" class="icon-link">
+              Voir les conseils
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">FAQ</h3>
+            <p>Trouvez des réponses approfondies et répondez à votre tour sur notre Foire aux Questions afin de contribuer à la communauté !</p>
+            <a href="{{ path('app_faq') }}" class="icon-link">
+              Visiter la FAQ
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Mon compte</h3>
+            <p>Créer un compte et recevez toute l'actualité voyage dans votre boite mail, en plus des différents bons plans ou connectez vous afin d'accéder aux conseils et à la FAQ</p>
+                <a href="#" class="icon-link">
+                Inscription
+                </a>
+                /
+                <a href="#" class="icon-link">
+                    Connexion
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+          </div>
+        </div>
+      </div>
 </section>
 {% endblock %}
